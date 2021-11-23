@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#SBATCH --nodes=8 --ntasks-per-node=8
+#SBATCH --job-name=task
+
+cd $SLURM_SUBMIT_DIR
+mpiexec ./sgemv
